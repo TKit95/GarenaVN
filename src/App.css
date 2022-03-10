@@ -1,3 +1,26 @@
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@keyframes aniPost {
+  from {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  to {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +58,273 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Header__nav {
+  position: fixed;
+  display: flex;
+  background: #101215;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.Header__logo {
+  max-height: 60px;
+  max-width: auto;
+}
+
+.nav__list {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav__list-item {
+  display: block;
+  list-style: none;
+  font-size: 1.7rem;
+  width: 190px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.nav__list-item::before {
+  content: '';
+  position: absolute;
+  background-color: #2bade9cc;;
+  height: 3px;
+  width: 0px;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.nav__list-item:hover::before {
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.nav__list-item a {
+  display: block;
+  line-height: 70px;
+  text-decoration: none;
+  color: tan;
+  line-height: 70px;
+  padding: 0 40px;
+  
+}
+
+.HeaderSlide__Bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cdn.vn.garenanow.com/web/lol-product/LOLwebsite/img/blurred1.jpg);
+  width: 100%;
+  height: 570px;
+  background-size: 100% 100%;
+  padding-top: 100px;
+}
+
+.HeaderSlide__Bg-Img {
+  margin-bottom: 22px;
+  max-height: 400px;
+  
+}
+
+.swiper-slide-active {
+  display: flex;
+}
+
+.swiper-slide {
+  justify-content: center;
+}
+
+.swiper-pointer-events {
+  height: 450px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-horizontal>.swiper-scrollbar {
+  display: none;
+}
+
+.swiper-slide .swiper-slide-active {
+  width: 700px !important;
+}
+
+.swiper-pagination-bullet {
+  font-size: 3rem;
+}
+
+.HeaderSlide__inner {
+  position: relative;
+  max-width: 1200px;
+  max-height: 600px;
+}
+
+.HeaderSlide__inner-stroke {
+  position: absolute;
+  stroke:aliceblue;
+  z-index: 9;
+  pointer-events: none;
+  fill: none;
+  top: -6px;
+  right: 10px;
+  left: 10px;
+}
+
+
+.swiper-pagination-bullet {
+  background-color: #2bade9cc !important;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+
+
+
+.Container {
+  width: 100%;
+}
+
+.ContentNew__width {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1220px;
+  height: 942px;
+  margin: 80px auto;
+  justify-content: center;
+}
+
+
+.Item {
+  width: 340px;
+  height: 446px;
+  animation: aniPost 1s ease-out;
+    -moz-animation: aniPost 1s ease-out;
+    -webkit-animation: aniPost 1s ease-out;
+    
+  
+  
+}
+
+.Item__img {
+  width: 340px;
+  height: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Item__test {
+  margin: auto;
+  padding: 0 8px;
+  width: 324px;
+  height: 180px;
+}
+
+.Item__test-p1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4db4f0;
+}
+
+.Item__test-h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #30333a;
+}
+
+.Item__test-p2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #6f7275;
+}
+
+
+
+
+
+.Footer {
+  display: block;
+  background-color: #101215;
+  width: 100%;
+  height: 380px;
+  color: #fff;
+  text-align: center;
+}
+
+.Footer__logo {
+  width: 100%;
+  height: 65px;
+  padding-top: 50px;
+}
+
+.Footer__text {
+  font-size: 1.4rem;
+  margin-top: 60px;
+  line-height: 1.4rem;
+}
+
+.Footer__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.Footer__list-item {
+  margin: 0 16px;
+  font-size: 1.2rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.Footer__list-item a {
+  padding: 0 5px;
+}
+
+.Footer__end {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.Footer__end-link {
+  position: relative;
+  background-image: url(https://cdn.vn.garenanow.com/web/lol-product/LOLwebsite/img/footer/playForFree.png);
+  background-repeat: no-repeat;
+  width: 180px;
+  height: auto;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.Footer__end-link-a {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 500;
+  top: 16px;
+  right: 32px;
+}
+
+.Footer__end-img {
+  height: 50px;
+  width: auto;
 }
