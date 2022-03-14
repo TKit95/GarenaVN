@@ -10,7 +10,7 @@ PostList.defaultProps = {
 };
 
 function PostList(props) {
-    const { posts } = props;
+    const [ posts ] = props;
     return (
         <>
             {

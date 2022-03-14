@@ -8,7 +8,7 @@ function ContentNews() {
 
     useEffect(() => {
         async function fetchPostList() {
-            const requesUrl = 'http://localhost:3000/listHome';
+            const requesUrl = 'https://raw.githubusercontent.com/TKit95/GarenaVN/master/dl.json';
             const response = await fetch(requesUrl);
             const responseJSON = await response.json();
             console.log(responseJSON)
