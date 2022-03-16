@@ -146,6 +146,37 @@ html {
   
 }
 
+.box svg path {
+  fill:none;
+  stroke:#c2c1c1;
+  stroke-width:1px;
+  stroke-linecap:round;
+  stroke-dasharray:3240;
+  -webkit-animation: svgAnimation3240 2.5s ease 1 backwards;
+  animation: svgAnimation3240 2.5s ease 1 backwards;
+}
+
+
+@-webkit-keyframes svgAnimation3240 {
+  0% {
+    stroke-dashoffset:3240
+  }
+
+  to {
+    stroke-dashoffset:0
+  }
+}
+@keyframes svgAnimation3240 {
+  0% {
+    stroke-dashoffset:3240
+  }
+
+  to {
+    stroke-dashoffset:0
+  }
+}
+
+
 .swiper-slide-active {
   display: flex;
 }
@@ -222,6 +253,10 @@ html {
 
 }
 
+.Container__input-input, input::placeholder {
+  text-align: center;
+}
+
 .Container__input-all {
   display: flex;
   position: relative;
@@ -237,14 +272,13 @@ html {
 .Container__input-icon {
   font-size: 2.6rem;
   color: tan;
-  margin-right: 40px;
 }
 
 .ContentNew__width {
   display: flex;
   flex-wrap: wrap;
   width: 1220px;
-  height: 920px;
+  height: 960x;
   margin: 80px auto;
   justify-content: center;
 
@@ -252,22 +286,49 @@ html {
 
 
 .Item {
+  position: relative;
   width: 340px;
   height: 446px;
+  cursor: pointer;
+  margin-bottom: 30px;
   animation: aniPost 1s ease-out;
     -moz-animation: aniPost 1s ease-out;
     -webkit-animation: aniPost 1s ease-out;
-    
-  
-  
+}
+
+.Item:hover {
+box-shadow: 2px 2px 1px #c2c1c1;
 }
 
 .Item__img {
+  
   width: 340px;
   height: 240px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.New__item svg {
+  z-index: 20;
+}
+
+.New__item svg[data-v-7f40d2dc]:first-child {
+  position: absolute;
+  top: -0.08rem;
+  left: 0.1rem;
+  width: 3.2rem;
+  height: 2.4rem;
+}
+
+.New__item svg:first-child path[data-v-7f40d2dc] {
+  fill: none;
+  stroke: #c2c1c1;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-dasharray: 1120;
+  -webkit-animation: svgAnimation1120-data-v-7f40d2dc 2.5s ease 1 backwards;
+  animation: svgAnimation1120-data-v-7f40d2dc 2.5s ease 1 backwards;
 }
 
 .Item__test {

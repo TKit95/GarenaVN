@@ -14,7 +14,7 @@ function ContentHome() {
             console.log(responseJSON)
            
             
-            setPostList(responseJSON);
+            setPostList(responseJSON.listHome);
         }
     fetchPostList();
     }, [])

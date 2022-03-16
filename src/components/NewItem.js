@@ -15,13 +15,15 @@ function PostList(props) {
         <>
             {
             posts.slice(0, 6).map(post => (
-                <div className="Item l-4" key={post.id}>
+                
+                <div className="Item l-4 New__item" key={post.id}>
                     <img className="Item__img" src={post.img} />
                     <div className="Item__test">
                             <p className="Item__test-p1">Sự kiện</p>
                             <h2 className="Item__test-h2">{post.title}</h2>
                             <p className="Item__test-p2">{post.content}</p>
                     </div>
+                   
                 </div>
                 ))
             }

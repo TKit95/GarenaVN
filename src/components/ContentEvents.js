@@ -14,7 +14,7 @@ function ContentEvents() {
             console.log(responseJSON)
            
             
-            setPostList(responseJSON);
+            setPostList(responseJSON.listHome);
         }
     fetchPostList();
     }, [])
