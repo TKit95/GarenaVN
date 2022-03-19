@@ -32,9 +32,16 @@ function ContentHandbooks() {
             </div>
             
             
-            <div className="ContentNew__width">
-                <PostList posts={postList} />
-            </div>
+            <div className="grid wide">
+        <div className="row">
+            <PostList posts={postList} />
+        </div>
+        
+    
+        
+                
+          
+    </div>
     </div>
   )
 };

@@ -32,8 +32,10 @@ function ContentCommunities() {
             </div>
             
             
-            <div className="ContentNew__width">
-                <PostList posts={postList} />
+            <div className="grid wide">
+                <div className="row">
+                    <PostList posts={postList} />
+                </div>      
             </div>
     </div>
   )

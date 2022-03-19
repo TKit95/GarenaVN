@@ -21,13 +21,14 @@ function ContentHome() {
 
 
   return (
-    <div className="Container">
-        <div className="ContentNew__width">
+    <div className="grid wide">
+        <div className="row">
             <PostList posts={postList} />
+        </div>
         <div className="Container__end-loadmore">
           <a className="Container__end-loadmore-a">XEM THÊM</a>
         </div>
-    </div>
+    
         
                 
           

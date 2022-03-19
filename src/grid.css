@@ -6,7 +6,7 @@
 
 .grid.wide {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 60px auto;
 }
 
 .row {
@@ -435,12 +435,13 @@
 }
 
 /* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: 1024px) {
     .wide {
         width: 984px;
     }
 
     .wide .row {
+        justify-content: space-between;
         margin-left: -12px;
         margin-right: -12px;
     }
