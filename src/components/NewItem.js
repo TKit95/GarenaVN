@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { type } from '@testing-library/user-event/dist/type';
 
 PostList.propTypes = {
     posts: PropTypes.array,
@@ -22,7 +23,7 @@ function PostList(props) {
                     </div>
                        
                     <div className="Item__test">
-                            <p className="Item__test-p1">Sự kiện</p>
+                            <p className="Item__test-p1">{post.type}</p>
                             <h2 className="Item__test-h2">{post.title}</h2>
                             <p className="Item__test-p2">{post.content}</p>
                     </div>
