@@ -8,7 +8,7 @@ function HeaderNav() {
         </NavLink>
         
         
-        <ul className="nav__list">
+        <ul className="nav__list hide-on-mobie">
           <li className="nav__list-item">
             <NavLink to="/News">Tin tức</NavLink>
           </li>
@@ -16,7 +16,7 @@ function HeaderNav() {
             <NavLink to="/Events">Sự kiện</NavLink>
           </li>
           <li className="nav__list-item">
-            <NavLink to="/Games">Tin game</NavLink>
+            <NavLink to="/Games">Trò chơi</NavLink>
           </li>
           <li className="nav__list-item">
             <NavLink to="/Communities">Cộng đồng</NavLink>

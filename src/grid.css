@@ -6,7 +6,7 @@
 
 .grid.wide {
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 0 auto 60px auto;
 }
 
 .row {
@@ -142,6 +142,7 @@
 /* >= Tablet */
 @media (min-width: 740px) {
     .row {
+        justify-content: space-between;
         margin-left: -8px;
         margin-right: -8px;
     }

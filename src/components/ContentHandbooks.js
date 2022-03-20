@@ -14,7 +14,7 @@ function ContentHandbooks() {
             console.log(responseJSON)
            
             
-            setPostList(responseJSON.listHome);
+            setPostList(responseJSON.new);
         }
     fetchPostList();
     }, [])

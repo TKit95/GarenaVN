@@ -8,6 +8,7 @@ import Handbooks from './Handbooks';
 import './App.css';
 import './index.css';
 import './grid.css';
+import './res.css';
 
 
 function App() {
