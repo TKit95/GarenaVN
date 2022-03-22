@@ -22,13 +22,6 @@ html {
   }
 }
 
-.WebApp {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  box-sizing: border-box;
-}
-
 .nav__list-item .active {
   background-color: rgba(250, 235, 215, 0.123);
 }
@@ -42,13 +35,13 @@ html {
 .Header__nav {
   position: fixed;
   top: 0;
-  display: flex;
   background: #101215;
   width: 100%;
   height: 70px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  z-index: 1000;
 }
 
 .Header__logo {
@@ -116,16 +109,35 @@ html {
   background-image: url(https://cdn.vn.garenanow.com/web/lol-product/LOLwebsite/img/blurred1.jpg);
   margin-top: 70px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 140%;
   width: 100%;
-  height: 50rem;
 }
 
 .HeaderSlide__Bg-Img {
-  height: 396px;
+  padding: 30px 30px 42px 30px;
   width: 100%;
-  
+  height: auto;
+  cursor: pointer;
 }
+
+.HeaderSlide__inner.box {
+  height: 100%;
+}
+
+.Header__icon-justify-item {
+  color: #ccbe91;
+  font-size: 3.6rem;
+  right: 2rem;
+  top: 0;
+  line-height: 70px;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+
+
+/* Swiper */
 
 .swiper-slide-active {
   display: flex;
@@ -133,10 +145,6 @@ html {
 
 .swiper-slide {
   justify-content: center;
-}
-
-.swiper-pointer-events {
-  height: 46rem;
 }
 
 .swiper-button-next,
@@ -155,15 +163,6 @@ html {
 
 .swiper-pagination-bullet {
   font-size: 3rem;
-}
-
-.HeaderSlide__inner {
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  
 }
 
 .HeaderSlide__inner-stroke {
@@ -187,138 +186,10 @@ html {
 /* animation header */
 
 .box{
-  
+  position: relative;
   height: 50rem;
   max-width: 120rem;
   margin: 0 auto;
-}
-.box svg{
-  z-index:10;
-  pointer-events:none
-}
-.box svg:first-child {
-  position:absolute;
-  top: -12px;
-  left: 7px;
-  width:1200px;
-  height:420px;
-}
-.box svg:first-child path {
-  fill:none;
-  stroke:#c2c1c1;
-  stroke-width:1px;
-  stroke-linecap:round;
-  stroke-dasharray:3240;
-  -webkit-animation:svgAnimation3240 2.5s ease 1 backwards;
-  animation:svgAnimation3240 2.5s ease 1 backwards
-}
-@media (max-width: 1000px) {
-  .box svg:first-child {
-    display: none;
-  }
-}
-.box svg:nth-child(2) {
-  display:none;
-  position:absolute;
-  top:0;
-  left:150px;
-  width: 900px;
-  height:360px;
-}
-.box svg:nth-child(2) path {
-  fill:none;
-  stroke:#c2c1c1;
-  stroke-width:1px;
-  stroke-linecap:round;
-  stroke-dasharray:2452;
-  -webkit-animation:svgAnimation2452 2.5s ease 1 backwards;
-  animation:svgAnimation2452 2.5s ease 1 backwards
-}
-@media screen and (max-width:999px) {
-  .box svg:nth-child(2) {
-    display:block
-  }
-}
-@media screen and (max-width:740px) {
-  .box svg:nth-child(2) {
-    display:none
-  }
-}
-.box svg:nth-child(3) {
-  display:none;
-  position:absolute;
-  top:0;
-  left:378px;
-  width:440px;
-  height:180px;
-}
-.box svg:nth-child(3) path {
-  fill:none;
-  stroke:#c2c1c1;
-  stroke-width:1px;
-  stroke-linecap:round;
-  stroke-dasharray:1840;
-  -webkit-animation:svgAnimation1840 2.5s ease 1 backwards;
-  animation:svgAnimation1840 2.5s ease 1 backwards
-}
-@media screen and (max-width:750px) {
-  .box svg:nth-child(3) {
-    display:block
-  }
-}
-@-webkit-keyframes svgAnimation3240 {
-  0% {
-    stroke-dashoffset:3240
-  }
-
-  to {
-    stroke-dashoffset:0
-  }
-}
-@keyframes svgAnimation3240 {
-  0% {
-    stroke-dashoffset:3240
-  }
-
-  to {
-    stroke-dashoffset:0
-  }
-}
-@-webkit-keyframes svgAnimation2452 {
-  0% {
-    stroke-dashoffset:2452
-  }
-
-  to {
-    stroke-dashoffset:0
-  }
-}
-@keyframes svgAnimation2452 {
-  0% {
-    stroke-dashoffset:2452
-  }
-
-  to {
-    stroke-dashoffset:0
-  }
-}
-@-webkit-keyframes svgAnimation1840 {
-  0% {
-    stroke-dashoffset:1840
-  }
-
-  to {
-    stroke-dashoffset:0
-  }
-}
-@keyframes svgAnimation1840 {
-  0% {
-    stroke-dashoffset:1840
-  }
-
-  to {
-    stroke-dashoffset:0
-  }
 }
 
 .Container__input {
@@ -371,13 +242,16 @@ html {
 }
 
 .Item__img {
+  position: relative;
   width: 100%;
-  height: 100%;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
   color: #59595e7e;
 }
+
+
 
 .figure {
   width: 335.99px;
@@ -463,11 +337,13 @@ html {
   display: block;
   background-color: #101215;
   width: 100%;
-  height: 380px;
   color: #fff;
   text-align: center;
 }
 
+.Footer2 {
+  padding: 30px 40px;
+}
 .Footer__logo {
   width: 100%;
   height: 65px;
@@ -477,18 +353,19 @@ html {
 .Footer__text {
   font-size: 1.4rem;
   margin-top: 60px;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 .Footer__list {
   display: flex;
   justify-content: center;
   margin-top: 36px;
+  padding: 0;
 }
 
 .Footer__list-item {
-  margin: 0 16px;
-  font-size: 1.2rem;
+  margin: 0 10px;
+  font-size: 0.8rem;
   list-style: none;
   cursor: pointer;
 }
@@ -507,7 +384,6 @@ html {
   background-image: url(https://cdn.vn.garenanow.com/web/lol-product/LOLwebsite/img/footer/playForFree.png);
   background-repeat: no-repeat;
   width: 180px;
-  height: auto;
   margin-right: 30px;
   cursor: pointer;
 }

@@ -2,7 +2,8 @@
 
 function Footer() {
     return (
-        <div className="Footer">
+    <div className="Footer">
+        <div className="Footer2">
             <div className="Footer__logo">
                 <img src="https://cdn.vn.garenanow.com/web/lol-product/LOLwebsite/img/footer/logos-vn.png" />
             </div>
@@ -22,20 +23,21 @@ function Footer() {
                 </li>
                 <li className="Footer__list-item">
                     <i class="fa-solid fa-book"></i>
-                    <a>Điều khoản dịch vụ</a>
+                    <a>Điều khoản</a>
                 </li>
                 <li className="Footer__list-item">
                     <i class="fa-solid fa-list"></i>
-                    <a>Trung tâm hỗ trợ</a>
+                    <a>Trợ giúp</a>
                 </li>
             </ul>
             <div className="Footer__end">
-                <div className="Footer__end-link">
+                <div className="Footer__end-link hide-on-mobie">
                     <a className="Footer__end-link-a">CHƠI MIỄN PHÍ</a>
                 </div>
                 <img className="Footer__end-img" src="https://cdn.vn.garenanow.com/web/lol-product/LOLwebsite/img/footer/vn-12.png"/>
             </div>
         </div>
+    </div>
     )
 }
 
