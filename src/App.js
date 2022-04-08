@@ -5,6 +5,7 @@ import Home from './Home';
 import Games from './Games';
 import Communities from './Communities';
 import Handbooks from './Handbooks';
+import Login from './Login';
 import './App.css';
 import './index.css';
 import './grid.css';
@@ -24,6 +25,7 @@ function App() {
           <Route path='/Games' element={<Games />} />
           <Route path='/Communities' element={<Communities />} />
           <Route path='/Handbooks' element={<Handbooks />} />
+          <Route path='/Login' element={<Login />} />
         </Routes>
       </div>
   )

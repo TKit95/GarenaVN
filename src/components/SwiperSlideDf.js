@@ -17,7 +17,7 @@ export default () => {
       modules={[Pagination, Autoplay]}
       spaceBetween={50}
       slidesPerView={1}
-      autoplay = {{ delay: 3000 }}
+      // autoplay = {{ delay: 3000 }}
       pagination={{
         clickable: true, 
       }}

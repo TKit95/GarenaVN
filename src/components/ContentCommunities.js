@@ -27,7 +27,8 @@ function ContentCommunities() {
                     <span className="Container__input-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <input className="Container__input-input" type="text" placeholder="Tìm kiếm thông tin" />
+                    <input className="Container__input-input" type="text"
+                     placeholder="Tìm kiếm thông tin" />
                 </div>
             </div>
             

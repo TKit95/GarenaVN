@@ -26,6 +26,9 @@ function HeaderNav() {
             <li className="nav__list-item2">
               <NavLink to="/Handbooks">Cẩm nang</NavLink>
             </li>
+            <li className="nav__list-item2">
+              <NavLink to="/Login">Đăng nhập</NavLink>
+            </li>
           </ul>
         </div>
 
